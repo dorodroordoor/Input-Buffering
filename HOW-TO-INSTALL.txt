@@ -1,0 +1,6 @@
+1. Install Geode on your PC (geode-sdk.org -> installer), launch GD once.
+2. mod.json is already set for GD 2.2081 and Geode 5. Only change it if your versions differ.
+3. Upload everything in this folder to a new GitHub repo.
+4. Open the Actions tab, wait for the green check, download the .geode file.
+5. Put the .geode file into  Geometry Dash\geode\mods  and restart GD.
+6. In GD: Geode button -> Mods -> Input Buffer -> settings.

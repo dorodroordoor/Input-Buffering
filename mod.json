@@ -1,0 +1,38 @@
+{
+	"geode": "5.0.0",
+	"gd": {
+		"win": "2.2081",
+		"android": "2.2081",
+		"mac": "2.2081"
+	},
+	"id": "yourname.input-buffer",
+	"name": "Input Buffer",
+	"version": "v1.0.0",
+	"developer": "yourname",
+	"description": "In any gamemode, if a click or release would kill you but waiting a tick or two wouldn't, the input is delayed until it's safe.",
+	"settings": {
+		"enabled": {
+			"type": "bool",
+			"name": "Enabled",
+			"default": true
+		},
+		"max-delay": {
+			"type": "int",
+			"name": "Max delay (ticks)",
+			"description": "How many physics ticks an input may be held back.",
+			"default": 2,
+			"min": 1,
+			"max": 8,
+			"control": { "slider": true }
+		},
+		"lookahead": {
+			"type": "int",
+			"name": "Check ticks after input",
+			"description": "After the input lands (now or delayed), how many ticks are simulated to check for death. 2 matches: press, check the next 2 ticks.",
+			"default": 2,
+			"min": 1,
+			"max": 30,
+			"control": { "slider": true }
+		}
+	}
+}
